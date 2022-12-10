@@ -1,0 +1,16 @@
+func Rot13(str string) string {
+
+	arg := []rune(str)
+	for i := 0; i < len(arg); i++ {
+		if arg[i] >= 'A' && arg[i] <= 'N' {
+			arg[i] = arg[i] + 13
+		} else if arg[i] >= 'N' && arg[i] <= 'Z' {
+			arg[i] = arg[i] - 13
+		} else if arg[i] >= 'a' && arg[i] <= 'n' {
+			arg[i] = arg[i] + 13
+		} else if arg[i] >= 'n' && arg[i] <= 'z' {
+			arg[i] = arg[i] - 13
+		}
+	}
+	return string(arg)
+}

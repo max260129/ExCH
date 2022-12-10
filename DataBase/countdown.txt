@@ -1,0 +1,7 @@
+package piscine
+
+func countdown()
+	for i:=9;i > 0; i-- {
+		z01.PrintRune(i)
+	}
+}
